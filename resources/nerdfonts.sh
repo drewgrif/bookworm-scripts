@@ -9,8 +9,8 @@ fonts=(
 "FiraCode" 
 "Go-Mono" 
 "Hack"  
-"Iosevka" 
 "JetBrainsMono" 
+"Meslo"
 "Mononoki" 
 "RobotoMono" 
 "SourceCodePro" 
@@ -19,7 +19,7 @@ fonts=(
 
 for font in ${fonts[@]}
 do
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/$font.zip
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/$font.zip
 	unzip $font.zip -d $HOME/.local/share/fonts/$font/
     rm $font.zip
 done
