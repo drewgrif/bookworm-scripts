@@ -19,7 +19,7 @@ sudo cp ./temp /usr/share/xsessions/dwm.desktop;rm ./temp
 # Creating directories
 mkdir ~/.config/suckless
 
-sudo apt install -y libx11-dev
+sudo apt install -y xorg-dev
 
 # Move install directory, make, and install
 cd ~/.config/suckless

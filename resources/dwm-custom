@@ -1,0 +1,19 @@
+cd ~/Downloads/dotfiles
+mkdir -p ~/.local/share/dwm
+cp .local/share/dwm/autostart.sh ~/.local/share/dwm/
+mv ~/.config/suckless/ ~/.config/suckless.orig/
+
+
+# moving patched dwm and slstatus
+cp .config/suckless/ ~/.config/
+
+cd ~/.config/suckless/dwm
+make
+sudo make clean install
+
+cd ~/.config/suckless/slstatus
+make
+sudo make clean install
+
+cd ~/Downloads/dotfiles
+
