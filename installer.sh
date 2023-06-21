@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo nala install nala
+sudo apt install -y nala
 
 # Default packages are for the configuration and corresponding .config folders
 # Install packages after installing base Debian with no GUI
