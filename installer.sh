@@ -19,6 +19,9 @@ xdg-user-dirs-update
 # source ./resources/qtile-commands
 # source ./resources/i3-commands
 
+# KDE Minimal
+# sudo apt install kde-plasma-desktop
+
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
