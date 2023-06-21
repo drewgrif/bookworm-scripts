@@ -39,7 +39,7 @@ sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
 sudo apt install -y tilix
 
 # Sound packages
-sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 
 # Neofetch
 sudo apt install -y neofetch
