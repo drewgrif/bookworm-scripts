@@ -76,7 +76,7 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 
 # my favs
 sudo apt install -y numlockx geany geany-plugins scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
-sudo apt install -y mpv figlet qimgv l3afpad galculator redshift
+sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x
 
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings
