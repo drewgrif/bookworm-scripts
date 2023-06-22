@@ -3,7 +3,7 @@
 cd ~/Downloads
 git clone https://github.com/drewgrif/dotfiles
 
-cp -r bin/ ~/bin
+\cp -r ~/Downloads/dotfiles/bin/ ~
 chmod +x ~/bin/*
 sudo cp ~/bin/pulseaudio-control.bash /bin/
 \cp -r ~/Downloads/dotfiles/.config/backgrounds/ ~/.config/

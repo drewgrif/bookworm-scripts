@@ -69,10 +69,10 @@ sudo apt install -y exa
 
 
 # Printing and bluetooth (if needed)
-sudo apt install -y cups system-config-printer simple-scan
+# sudo apt install -y cups system-config-printer simple-scan
 # sudo apt install -y bluez blueman
 
-sudo systemctl enable cups
+# sudo systemctl enable cups
 # sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
