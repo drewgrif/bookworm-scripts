@@ -14,11 +14,11 @@ sudo apt install -y build-essential
 xdg-user-dirs-update
 
 # PICK YOUR Window Managers (Uncomment if you want these installed)
-# source ./resources/bspwm-commands
-# source ./resources/dk-commands
-# source ./resources/dwm-commands
-# source ./resources/qtile-commands
-# source ./resources/i3-commands
+# bash ~/bookworm-scripts/resources/bspwm-commands
+# bash ~/bookworm-scripts/dk-commands
+# bash ~/bookworm-scripts/dwm-commands
+# bash ~/bookworm-scripts/qtile-commands
+# bash ~/bookworm-scripts/i3-commands
 
 # XFCE4 Minimal
 # sudo apt install -y xfce4 xfce4-goodies
