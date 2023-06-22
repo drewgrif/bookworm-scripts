@@ -60,7 +60,7 @@ sudo apt install -y firefox-esr
 sudo apt install -y feh
  
 # Fonts and icons for now
-sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme 
+sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus
 
 # EXA installation
 # replace ls command in .bashrc file with line below
@@ -79,7 +79,7 @@ sudo apt install -y exa
 sudo apt install -y picom rofi dunst libnotify-bin unzip 
 
 # my favs
-sudo apt install -y numlockx geany geany-plugins scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
+sudo apt install -y numlockx geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
 sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x
 
 # Install Lightdm Console Display Manager
