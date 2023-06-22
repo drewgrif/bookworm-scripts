@@ -15,10 +15,10 @@ xdg-user-dirs-update
 
 # PICK YOUR Window Managers (Uncomment if you want these installed)
 # bash ~/bookworm-scripts/resources/bspwm-commands
-# bash ~/bookworm-scripts/dk-commands
-# bash ~/bookworm-scripts/dwm-commands
-# bash ~/bookworm-scripts/qtile-commands
-# bash ~/bookworm-scripts/i3-commands
+# bash ~/bookworm-scripts/resources/dk-commands
+# bash ~/bookworm-scripts/resources/dwm-commands
+# bash ~/bookworm-scripts/resources/qtile-commands
+# bash ~/bookworm-scripts/resources/i3-commands
 
 # XFCE4 Minimal
 # sudo apt install -y xfce4 xfce4-goodies
@@ -37,7 +37,7 @@ sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
-sudo apt install -y tilix
+sudo apt install -y tilix kitty
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
@@ -94,9 +94,9 @@ sudo systemctl enable lightdm
 ## These two scripts will install nerdfonts and copy my configuration files into the ~/.config directory
 ## Configuration uses 
 
-source ./resources/nerdfonts.sh
+bash ~/bookworm-scripts/resources/nerdfonts.sh
 
-cp ./resources/.bashrc ~
+\cp ~/bookworm-scripts/resources/.bashrc ~
 
 
 sudo apt autoremove
