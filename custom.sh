@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 cd ~/Downloads
 git clone https://github.com/drewgrif/dotfiles

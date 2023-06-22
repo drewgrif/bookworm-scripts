@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Remove the EXTERNALLY-MANAGED file so pip works again
 sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED

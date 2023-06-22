@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo apt install -y bspwm suckless-tools sxhkd polybar
 

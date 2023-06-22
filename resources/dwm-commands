@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # XSessions and dwm.desktop
 if [[ ! -d /usr/share/xsessions ]]; then
