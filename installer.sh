@@ -1,15 +1,15 @@
 #!/bin/bash
 
-sudo apt install -y nala
+sudo apt install -y apt
 
 # Default packages are for the configuration and corresponding .config folders
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
-sudo nala install -y xorg xbacklight xbindkeys xvkbd xinput
+sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
 
 # PACKAGE INCLUDES build-essential.
-sudo nala install -y build-essential
+sudo apt install -y build-essential
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
@@ -21,70 +21,70 @@ xdg-user-dirs-update
 # source ./resources/qtile-commands
 # source ./resources/i3-commands
 
-# KDE Minimal
-# sudo nala install kde-plasma-desktop
+# XFCE4 Minimal
+# sudo apt install -y xfce4 xfce4-goodies
 
 
 # Network File Tools/System Events
-sudo nala install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
+sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
 
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
 # Networking etc
-sudo nala install -y policykit-1-gnome network-manager network-manager-gnome
+sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 
 # Thunar
-sudo nala install -y thunar thunar-archive-plugin thunar-volman file-roller
+sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
-sudo nala install -y tilix
+sudo apt install -y tilix
 
 # Sound packages
-sudo nala install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 
 # Neofetch
-sudo nala install -y neofetch
+sudo apt install -y neofetch
 
 # Network Manager
-sudo nala install -y network-manager network-manager-gnome 
+sudo apt install -y network-manager network-manager-gnome 
 
 # Installation for Appearance management
-sudo nala install -y lxappearance 
+sudo apt install -y lxappearance 
 
 # Browser Installation (eg. chromium)
-sudo nala install -y firefox-esr 
+sudo apt install -y firefox-esr 
 
 # Desktop background browser/handler 
 # feh --bg-fill /path/to/directory 
-# sudo nala install -y nitrogen 
-sudo nala install -y feh
+# sudo apt install -y nitrogen 
+sudo apt install -y feh
  
 # Fonts and icons for now
-sudo nala install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme 
+sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme 
 
 # EXA installation
 # replace ls command in .bashrc file with line below
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
-sudo nala install -y exa
+sudo apt install -y exa
 
 
 # Printing and bluetooth (if needed)
-sudo nala install -y cups system-config-printer simple-scan
-# sudo nala install -y bluez blueman
+sudo apt install -y cups system-config-printer simple-scan
+# sudo apt install -y bluez blueman
 
 sudo systemctl enable cups
 # sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
-sudo nala install -y picom rofi dunst libnotify-bin unzip 
+sudo apt install -y picom rofi dunst libnotify-bin unzip 
 
 # my favs
-sudo nala install -y numlockx geany geany-plugins scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
-sudo nala install -y mpv figlet qimgv l3afpad galculator redshift cpu-x
+sudo apt install -y numlockx geany geany-plugins scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
+sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x
 
 # Install Lightdm Console Display Manager
-sudo nala install -y lightdm lightdm-gtk-greeter-settings
+sudo apt install -y lightdm lightdm-gtk-greeter-settings
 sudo systemctl enable lightdm
 
 
