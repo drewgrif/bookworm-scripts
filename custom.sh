@@ -18,7 +18,7 @@ cp .config/sxhkd/ ~/.config/
 cp .config/rofi/ ~/.config/
 
 # DWM patched with slstatus patched
-
+cd ~/bookworm-scripts
 ./resources/dwm-custom
 
 
