@@ -80,7 +80,7 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 
 # my favs
 sudo apt install -y numlockx geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
-sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x
+sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x galculator ghostwriter
 
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings
