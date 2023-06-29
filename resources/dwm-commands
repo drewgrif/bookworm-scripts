@@ -20,7 +20,7 @@ sudo cp ./temp /usr/share/xsessions/dwm.desktop;rm ./temp
 # Creating directories
 mkdir ~/.config/suckless
 
-sudo apt install -y xorg-dev
+sudo apt install -y xorg-dev sxhkd
 
 # Move install directory, make, and install
 cd ~/.config/suckless
