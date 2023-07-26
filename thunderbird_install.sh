@@ -8,11 +8,8 @@ sudo apt install unzip
 
 cd ~/Downloads
 
-# temporary fix for Thunderbird 115
-wget -O thunderbird.tar.bz2 "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/115.0/linux-x86_64/en-US/thunderbird-115.0.tar.bz2"
-
 # This should work if thunderbird updates to the most current version
-# wget -O thunderbird.tar.bz2 "https://download.mozilla.org/?product=thunderbird-latest&os=linux64&lang=en-US"
+wget -O thunderbird.tar.bz2 "https://download.mozilla.org/?product=thunderbird-latest&os=linux64&lang=en-US"
 
 # Extract files to /opt directory
 
