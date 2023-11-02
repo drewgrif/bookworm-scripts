@@ -5,7 +5,7 @@
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
-sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
+sudo apt install -y xorg xserver-xorg xbacklight xbindkeys xvkbd xinput
 
 # PACKAGE INCLUDES build-essential.
 sudo apt install -y build-essential
@@ -80,7 +80,7 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 
 # my favs
 sudo apt install -y numlockx geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
-sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x galculator ghostwriter udns-utils whois curl
+sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x galculator wmctrl udns-utils whois curl
 
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings
