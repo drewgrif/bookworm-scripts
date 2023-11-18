@@ -12,6 +12,7 @@ sudo apt install -y build-essential
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
+mkdir ~/Screenshots/
 
 # PICK YOUR Window Managers (Uncomment if you want these installed)
 # bash ~/bookworm-scripts/resources/bspwm-commands
