@@ -19,7 +19,7 @@ sudo tar -xvf thunderbird.tar.bz2 -C /opt/;rm thunderbird.tar.bz2
 # adding desktop file
 cat > ./temp << "EOF"
 [Desktop Entry]
-Version=115.0
+Version=115.4
 Type=Application
 Name=Thunderbird
 Comment=Mail
