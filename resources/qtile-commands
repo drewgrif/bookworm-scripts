@@ -6,7 +6,7 @@
 qtilevenv="$HOME/.local/src/qtile_venv"
 
 # Dependencies
-sudo apt install -y python3 python3-pip python3-pip python3-venv python3-v-sim python3-dbus-dev libpangocairo-1.0-0 python3-cairocffi python3-xcffib libxkbcommon-dev libxkbcommon-x11-dev git sxhkd
+sudo apt install -y python3 python3-pip python3-pip python3.11-venv python3-v-sim python-dbus-dev libpangocairo-1.0-0 python3-cairocffi python3-xcffib libxkbcommon-dev libxkbcommon-x11-dev git sxhkd
 
 # Setting up virtual environment for qtile.
 python3 -m venv $qtilevenv 
