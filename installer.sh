@@ -15,9 +15,9 @@ xdg-user-dirs-update
 mkdir ~/Screenshots/
 
 # PICK YOUR Window Managers (Uncomment if you want these installed)
-# bash ~/bookworm-scripts/resources/bspwm-commands
+ bash ~/bookworm-scripts/resources/bspwm-commands
 # bash ~/bookworm-scripts/resources/dk-commands
-# bash ~/bookworm-scripts/resources/dwm-commands
+ bash ~/bookworm-scripts/resources/dwm-commands
 # bash ~/bookworm-scripts/resources/qtile-commands
 # bash ~/bookworm-scripts/resources/i3-commands
 
@@ -38,7 +38,7 @@ sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
-sudo apt install -y tilix terminator
+sudo apt install -y tilix alacritty
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
@@ -70,10 +70,10 @@ sudo apt install -y exa
 
 
 # Printing and bluetooth (if needed)
-# sudo apt install -y cups system-config-printer simple-scan
+ sudo apt install -y cups system-config-printer simple-scan
 # sudo apt install -y bluez blueman
 
-# sudo systemctl enable cups
+ sudo systemctl enable cups
 # sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
