@@ -15,9 +15,9 @@ xdg-user-dirs-update
 mkdir ~/Screenshots/
 
 # PICK YOUR Window Managers (Uncomment if you want these installed)
- bash ~/bookworm-scripts/resources/bspwm-commands
+# bash ~/bookworm-scripts/resources/bspwm-commands
 # bash ~/bookworm-scripts/resources/dk-commands
- bash ~/bookworm-scripts/resources/dwm-commands
+# bash ~/bookworm-scripts/resources/dwm-commands
 # bash ~/bookworm-scripts/resources/qtile-commands
 # bash ~/bookworm-scripts/resources/i3-commands
 
@@ -38,7 +38,7 @@ sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
-sudo apt install -y tilix alacritty
+sudo apt install -y kitty alacritty
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
@@ -70,18 +70,28 @@ sudo apt install -y exa
 
 
 # Printing and bluetooth (if needed)
- sudo apt install -y cups system-config-printer simple-scan
+# sudo apt install -y cups system-config-printer simple-scan
 # sudo apt install -y bluez blueman
 
- sudo systemctl enable cups
+# sudo systemctl enable cups
 # sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
-sudo apt install -y picom rofi dunst libnotify-bin unzip 
+sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl
 
-# my favs
-sudo apt install -y numlockx geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
-sudo apt install -y mpv figlet qimgv l3afpad galculator redshift cpu-x galculator wmctrl udns-utils whois curl
+# Geany Text Editor
+# sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
+sudo apt install -y mousepad
+
+# My Favorites
+# Multimedia/GFX
+sudo apt install -y mpv qimgv scrot gimp obs-studio mkvtoolnix-gui redshift
+
+# PDF 
+sudo apt install -y  evince pdfarranger
+
+# Others
+sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl
 
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings

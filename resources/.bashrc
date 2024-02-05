@@ -19,9 +19,13 @@ alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 
 alias x="exit"
 # Dotfiles & Files
 alias bs='micro ~/.bashrc'
+alias ewm='micro ~/.config/bspwm/bspwmrc'
+alias ehk='micro ~/.config/sxhkd/sxhkdrc'
 alias reload='source ~/.bashrc'
-alias v="micro"
+alias v="nvim"
+alias vv="nvim ."
 alias e="micro"
+alias gd="cd ~/Downloads"
 # Git aliases
 alias gp="git push -u origin main"
 alias gsave="git commit -m 'save'"
@@ -38,8 +42,8 @@ alias egrep='grep --color=auto'
 export PATH="~/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
- export VISUAL=micro;
- export EDITOR=micro;
+ export VISUAL=nvim;
+ export EDITOR=nvim;
 # PS1 Customization
 #PS1="\[\e[32m\]\h\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\u\[\e[m\] \W \$ " 
 # Colour codes
@@ -55,6 +59,5 @@ ENDC="\\[\\e[0m\\]"
 # Set a two-line prompt. If accessing via ssh include 'ssh-session' message.
 if [[ -n "$SSH_CLIENT" ]]; then ssh_message="-ssh_session"; fi
 PS1="${MAGENTA}\t ${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\w \n${CYAN}\$${ENDC} "
-
 
 neofetch
