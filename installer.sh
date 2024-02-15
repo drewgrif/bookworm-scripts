@@ -61,7 +61,7 @@ sudo apt install -y firefox-esr
 sudo apt install -y feh
  
 # Fonts and icons for now
-sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus
+sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme
 
 # EXA installation
 # replace ls command in .bashrc file with line below
