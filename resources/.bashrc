@@ -31,6 +31,7 @@ alias gp="git push -u origin main"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
 alias gc="git clone"
+alias tr="tree"
 
 # Dunst
 alias hi="notify-send 'Hi there!' 'Welcome to my bspwm desktop! ' -i ''"

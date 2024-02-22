@@ -91,7 +91,7 @@ sudo apt install -y mpv qimgv scrot gimp obs-studio mkvtoolnix-gui redshift
 sudo apt install -y  evince pdfarranger
 
 # Others
-sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl
+sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl tree
 
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings
