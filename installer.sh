@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 # Default packages are for the configuration and corresponding .config folders
 # Install packages after installing base Debian with no GUI
 
@@ -59,7 +58,7 @@ sudo apt install -y firefox-esr
 # feh --bg-fill /path/to/directory 
 # sudo apt install -y nitrogen 
 sudo apt install -y feh
- 
+
 # Fonts and icons for now
 sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme
 
