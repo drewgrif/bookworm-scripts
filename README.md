@@ -1,5 +1,6 @@
 # bookworm-scripts
-The series of shell scripts are intended to build a pretty clean Debian 12.
+Assuming you have already installed a minimal Debian 12 install.
+The series of shell scripts are intended to facilitate installing popular window managers.
 
 Within the installer.sh file, you can choose to install the following window managers:
 * bspwm
@@ -7,10 +8,9 @@ Within the installer.sh file, you can choose to install the following window man
 * dwm
 * qtile
 * i3
-
 Uncomment the lines in the bash script to enable installation.
 
-With regard to other scripts:
+#### With regard to other scripts:
 * custom.sh - installs my current configurations for all window managers.
 * discord-install.sh - installs the newest discord quickly from the current binary files.
 * lapce.sh - installs the alpah version of the Lapce text editor.  
