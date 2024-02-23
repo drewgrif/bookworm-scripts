@@ -8,7 +8,8 @@ Within the installer.sh file, you can choose to install the following window man
 * dwm
 * qtile
 * i3
-Uncomment the lines in the bash script to enable installation.
+
+**Uncomment the lines in the bash script to enable installation.**
 
 #### With regard to other scripts:
 * custom.sh - installs my current configurations for all window managers.
