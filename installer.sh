@@ -84,7 +84,7 @@ sudo apt install -y mousepad
 
 # My Favorites
 # Multimedia/GFX
-sudo apt install -y mpv qimgv scrot gimp obs-studio mkvtoolnix-gui redshift
+sudo apt install -y mpv qimgv scrot gimp obs-studio mkvtoolnix-gui redshift eog
 
 # PDF 
 sudo apt install -y  evince pdfarranger
