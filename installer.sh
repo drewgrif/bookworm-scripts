@@ -76,7 +76,7 @@ sudo apt install -y exa
 # sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
-sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl
+sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl xdotool
 
 # Geany Text Editor
 # sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
