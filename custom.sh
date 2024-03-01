@@ -6,7 +6,6 @@ git clone https://github.com/drewgrif/dotfiles
 \cp -r ~/Downloads/dotfiles/bin/ ~
 chmod +x ~/bin/*
 sudo cp ~/bin/pulseaudio-control.bash /bin/
-\cp -r ~/Downloads/dotfiles/.config/alacritty/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/backgrounds/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/bspwm/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/dk/ ~/.config/
