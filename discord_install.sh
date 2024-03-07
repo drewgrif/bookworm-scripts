@@ -6,7 +6,7 @@ sudo apt install unzip
 
 # Retrieve discord tar.gz file 
 
-wget "https://discordapp.com/api/download/stable?platform=linux&format=tar.gz" -O discord.tar.gz
+wget "https://discord.com/api/download?platform=linux&format=tar.gz" -O discord.tar.gz
 
 # Extract files to /opt directory
 
