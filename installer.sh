@@ -79,8 +79,8 @@ sudo apt install -y exa
 sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl xdotool
 
 # Geany Text Editor
-# sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
-sudo apt install -y mousepad
+sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
+# sudo apt install -y mousepad
 
 # My Favorites
 # Multimedia/GFX
