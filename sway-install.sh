@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Dependencies
-sudo apt install -y build-essential cmake cmake-extras curl gettext libnotify-bin light
+sudo apt install -y build-essential cmake cmake-extras curl gettext libnotify-bin light meson ninja-build
 
 # Sway installation for Debian Bookworm
 sudo apt install -y sway waybar swaylock swayidle swaybg
