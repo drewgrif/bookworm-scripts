@@ -13,7 +13,7 @@ sudo apt install -y build-essential
 xdg-user-dirs-update
 mkdir ~/Screenshots/
 
-# PICK YOUR Window Managers (Uncomment if you want these installed)
+# PICK YOUR X11 Window Managers (Uncomment if you want these installed)
 # bash ~/bookworm-scripts/resources/bspwm-commands
 # bash ~/bookworm-scripts/resources/dk-commands
 # bash ~/bookworm-scripts/resources/dwm-commands
@@ -22,7 +22,6 @@ mkdir ~/Screenshots/
 
 # XFCE4 Minimal
 # sudo apt install -y xfce4 xfce4-goodies
-
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
@@ -76,15 +75,18 @@ sudo apt install -y exa
 # sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
-sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl xdotool
+sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl xdotool libnotify-dev
 
-# Geany Text Editor
-sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
-# sudo apt install -y mousepad
+# Geany Text Editor, text editor, markdown editor
+# sudo apt install -y geany 
+# sudo apt install -y geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
+# sudo apt install -y geany-plugins \ # all plugins
+# sudo apt install -y mousepad ghostwriter
+# sudo apt install -y l3afpad
 
 # My Favorites
 # Multimedia/GFX
-sudo apt install -y mpv qimgv scrot gimp obs-studio mkvtoolnix-gui redshift eog
+sudo apt install -y mpv qimgv scrot gimp obs-studio mkvtoolnix-gui redshift eog brightnessctl
 
 # PDF 
 sudo apt install -y  evince pdfarranger
@@ -93,8 +95,11 @@ sudo apt install -y  evince pdfarranger
 sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl tree
 
 # Install Lightdm Console Display Manager
-sudo apt install -y lightdm lightdm-gtk-greeter-settings
-sudo systemctl enable lightdm
+# sudo apt install -y lightdm lightdm-gtk-greeter-settings
+# sudo systemctl enable lightdm
+
+# Install the Ly Console Display Manager
+bash ~/bookworm-scripts/ly.sh
 
 
 ########################################################
