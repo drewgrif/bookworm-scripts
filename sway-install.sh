@@ -1,7 +1,11 @@
 #!/bin/sh
 
 # Dependencies
-sudo apt install -y build-essential cmake cmake-extras curl gettext libnotify-bin light meson ninja-build
+sudo apt install -y build-essential cmake cmake-extras curl gettext libnotify-bin light meson ninja-build libxcb-util0-dev libxkbcommon-dev libxkbcommon-x11-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-cursor-dev libxcb-xinerama0-dev libstartup-notification0-dev
+
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+xdg-user-dirs-update
+mkdir ~/Screenshots/
 
 # Sway installation for Debian Bookworm
 sudo apt install -y sway waybar swaylock swayidle swaybg
@@ -37,6 +41,10 @@ sudo apt install -y mpv mpv-mpris nvtop pamixer ffmpeg qimgv gimp obs-studio mkv
 # sudo apt install wofi
 bash ~/bookworm-scripts/resources/rofi-wayland
 
+# nwg-look takes the place of lxappearance in x11 
+# 
+bash ~/bookworm-scripts/resources/nwg-look
+
 # text editor
 # sudo apt install -y l3afpad 
 # sudo apt install -y geany geany-plugins
@@ -58,7 +66,7 @@ sudo apt install -y exa
 sudo apt install -y evince pdfarranger
 
 # Others
-sudo apt install -y figlet galculator cpu-x udns-utils whois curl tree
+sudo apt install -y figlet galculator cpu-x udns-utils whois curl tree neofetch
 
 # Fonts and icons for now
 sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme
@@ -70,8 +78,6 @@ bash ~/bookworm-scripts/resources/nerdfonts.sh
 
 # Install the Ly Console Display Manager
 bash ~/bookworm-scripts/ly.sh
-
-mkdir ~/Screenshots/
 
 \cp ~/bookworm-scripts/resources/.bashrc ~
 
