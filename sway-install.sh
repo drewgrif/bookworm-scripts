@@ -43,7 +43,7 @@ bash ~/bookworm-scripts/resources/nwg-look
 
 # text editor
 # sudo apt install -y l3afpad 
-# sudo apt install -y geany geany-plugins
+# sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
 # sudo apt install -y gedit
 
 # EXA installation
