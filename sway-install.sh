@@ -37,10 +37,6 @@ sudo apt install -y pipewire pavucontrol pamixer
 # Multimedia
 sudo apt install -y mpv mpv-mpris nvtop pamixer ffmpeg qimgv gimp obs-studio mkvtoolnix-gui redshift eog brightnessctl
 
-# wofi - confusingly similar to rofi
-# sudo apt install wofi
-bash ~/bookworm-scripts/resources/rofi-wayland
-
 # nwg-look takes the place of lxappearance in x11 
 # 
 bash ~/bookworm-scripts/resources/nwg-look
@@ -78,6 +74,10 @@ bash ~/bookworm-scripts/resources/nerdfonts.sh
 
 # Install the Ly Console Display Manager
 bash ~/bookworm-scripts/ly.sh
+
+# wofi - confusingly similar to rofi
+# sudo apt install wofi
+bash ~/bookworm-scripts/resources/rofi-wayland
 
 \cp ~/bookworm-scripts/resources/.bashrc ~
 
