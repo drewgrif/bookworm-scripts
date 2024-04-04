@@ -16,6 +16,7 @@ sudo cp ~/bin/pulseaudio-control.bash /bin/
 \cp -r ~/Downloads/dotfiles/.config/qtile/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/sxhkd/ ~/.config/
 \cp -r ~/Downloads/dotfiles/.config/rofi/ ~/.config/
+\cp -r ~/Downloads/dotfiles/.config/neofetch/ ~/.config/
 
 # DWM patched with slstatus patched
 bash ~/bookworm-scripts/resources/dwm-custom
