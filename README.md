@@ -20,6 +20,8 @@ Within the installer.sh file, you can choose to install the following window man
 * ly.sh - installs the ly console manager (careful if you already have lightdm installed)
 * neovim.sh - neovim in the Debian packages is somewhat dated.  This installs the newest from github.
 * orchis.sh - installs some gtk themes and icons for your gui.
+* teal.sh - installs teal colored gtk theme and icon set
+* blue.sh - installs blue colored gtk theme and icon set
 * thunderbird_install.sh - installs the newest thunderbird on Debian.
 
 ### NEW sway-install.sh added
