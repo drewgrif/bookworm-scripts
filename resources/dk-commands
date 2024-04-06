@@ -4,7 +4,8 @@ sudo apt install -y libxcb-randr0-dev
 sudo apt install -y libxcb-util-dev
 sudo apt install -y libxcb-icccm4-dev 
 sudo apt install -y libxcb-cursor-dev 
-sudo apt install -y libxcb-keysyms1-dev 
+sudo apt install -y libxcb-keysyms1-dev
+sudo apt install -y libxcb-res0-dev 
 sudo apt install -y sxhkd polybar
 
 cd ~/Downloads
