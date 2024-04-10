@@ -19,13 +19,14 @@ alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 
 alias x="exit"
 # Dotfiles & Files
 alias bs='micro ~/.bashrc'
-alias ewm='micro ~/.config/bspwm/bspwmrc'
-alias ehk='micro ~/.config/sxhkd/sxhkdrc'
 alias reload='source ~/.bashrc'
 alias v="nvim"
 alias vv="nvim ."
 alias e="micro"
+alias g.="cd ~/.config"
 alias gd="cd ~/Downloads"
+alias gdw="cd ~/.config/suckless/dwm"
+alias gds="cd ~/.config/suckless/slstatus"
 # Git aliases
 alias gp="git push -u origin main"
 alias gsave="git commit -m 'save'"
@@ -34,7 +35,7 @@ alias gc="git clone"
 alias tr="tree"
 
 # Dunst
-alias hi="notify-send 'Hi there!' 'Welcome to my bspwm desktop! ' -i ''"
+alias hi="notify-send 'Hi there!' 'Welcome to my dwm desktop! ' -i ''"
 
 
 # Add Color
