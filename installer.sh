@@ -44,9 +44,6 @@ sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 # Neofetch
 sudo apt install -y neofetch
 
-# Network Manager
-sudo apt install -y network-manager network-manager-gnome 
-
 # Installation for Appearance management
 sudo apt install -y lxappearance 
 
