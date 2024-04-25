@@ -12,19 +12,19 @@ perl Build.PL
      ./Build test
 sudo   ./Build install
      
-mkdir ~/.local/bin/
-mkdir ~/.config/obmenu-generator
+mkdir -p ~/.local/bin/
+mkdir -p ~/.config/fbmenugen
 
 cd ~/Downloads
-git clone https://github.com/trizen/obmenu-generator.git
-cd obmenu-generator
-cp obmenu-generator ~/.local/bin/
-cp schema.pl ~/.config/obmenu-generator
+git clone https://github.com/trizen/fbmenugen.git
+cd fbmenugen
+cp fbmenugen ~/.local/bin/
+cp schema.pl ~/.config/fbmenugen
 
 sudo rm -r ~/Downloads/Linux-DesktopFiles
-sudo rm -rf ~/Downloads/obmenu-generator
+sudo rm -rf ~/Downloads/fbmenugen
 
-obmenu-generator -p -i     # dynamic menu with icons
+fbmenugen     # dynamic menu with icons
 
 
 
