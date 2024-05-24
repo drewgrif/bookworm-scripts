@@ -1,24 +1,22 @@
 #!/usr/bin/env bash
 
 cd ~/Downloads
-git clone https://github.com/drewgrif/dotfiles
+git clone https://github.com/drewgrif/jag_dots
 
-\cp -r ~/Downloads/dotfiles/bin/ ~
+\cp -r ~/Downloads/jag_dots/bin/ ~
 chmod +x ~/bin/*
 sudo cp ~/bin/pulseaudio-control.bash /bin/
-\cp -r ~/Downloads/dotfiles/.config/backgrounds/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/bspwm/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/dk/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/dunst/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/i3/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/picom/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/polybar/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/qtile/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/sxhkd/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/rofi/ ~/.config/
-\cp -r ~/Downloads/dotfiles/.config/neofetch/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/backgrounds/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/bspwm/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/dk/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/dunst/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/i3/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/picom/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/polybar/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/qtile/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/sxhkd/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/rofi/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/neofetch/ ~/.config/
 
 # DWM patched with slstatus patched
 bash ~/bookworm-scripts/resources/dwm-custom
-
-

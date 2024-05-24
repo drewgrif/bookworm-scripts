@@ -2,13 +2,13 @@
 
 # move autostart
 mkdir -p ~/.local/share/dwm
-\cp -r ~/Downloads/dotfiles/.local/share/dwm/autostart.sh ~/.local/share/dwm/
+\cp -r ~/Downloads/jag_dots/.local/share/dwm/autostart.sh ~/.local/share/dwm/
 
 # move original dwm build
 mv ~/.config/suckless/ ~/.config/suckless.orig/
 
 # moving patched dwm and slstatus
-\cp -r ~/Downloads/dotfiles/.config/suckless/ ~/.config/
+\cp -r ~/Downloads/jag_dots/.config/suckless/ ~/.config/
 
 cd ~/.config/suckless/dwm
 make
@@ -17,5 +17,3 @@ sudo make clean install
 cd ~/.config/suckless/slstatus
 make
 sudo make clean install
-
-
