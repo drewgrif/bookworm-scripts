@@ -14,7 +14,6 @@ sudo cp ~/bin/pulseaudio-control.bash /bin/
 \cp -r ~/Downloads/jag_dots/.config/picom/ ~/.config/
 \cp -r ~/Downloads/jag_dots/.config/polybar/ ~/.config/
 \cp -r ~/Downloads/jag_dots/.config/qtile/ ~/.config/
-\cp -r ~/Downloads/jag_dots/.config/sxhkd/ ~/.config/
 \cp -r ~/Downloads/jag_dots/.config/rofi/ ~/.config/
 \cp -r ~/Downloads/jag_dots/.config/neofetch/ ~/.config/
 
