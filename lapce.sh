@@ -9,11 +9,11 @@ sudo apt install unzip
 cd ~/Downloads
 
 # This should work
-wget -O lapce-linux.tar.bz2 "https://github.com/lapce/lapce/releases/latest/download/Lapce-linux.tar.gz"
+wget -O lapce-linux-amd64.tar.gz "https://github.com/lapce/lapce/releases/latest/download/Lapce-linux-amd64.tar.gz"
 
 # Extract files to /opt directory
 
-sudo tar -xvf lapce-linux.tar.bz2 -C /opt/;rm lapce-linux.tar.bz2
+sudo tar -xvf lapce-linux-amd64.tar.gz -C /opt/;rm lapce-linux-amd64.tar.gz
 cd /opt/Lapce/
 sudo wget https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo.png
 cd
