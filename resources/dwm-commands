@@ -24,7 +24,7 @@ sudo apt install -y xorg-dev sxhkd
 
 # Move install directory, make, and install
 cd ~/.config/suckless
-tools=( "dwm" "st" "slstatus" )
+tools=( "dwm" "st" "slstatus" "dmenu" "slock" )
 for tool in ${tools[@]}
 do 
 	git clone git://git.suckless.org/$tool

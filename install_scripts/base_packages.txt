@@ -1,0 +1,8 @@
+xorg
+xserver-xorg
+xbacklight
+xbindkeys
+xvkbd
+xinput
+build-essential
+git
