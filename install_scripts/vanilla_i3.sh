@@ -18,7 +18,7 @@ read_base_packages() {
 }
 
 # Read common packages from file
-read_base_packages "base_packages.txt"
+read_base_packages "~/bookworm-scripts/install_scripts/base_packages.txt"
 
 # Function to install packages if they are not already installed
 install_packages() {
