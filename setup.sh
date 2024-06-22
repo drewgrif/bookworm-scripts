@@ -121,35 +121,198 @@ prompt_installation_choice() {
 
 # Main script starts here
 
-# Function to handle installation based on user choice
-install_window_manager() {
-    local wm_name="$1"
-    local vanilla_function="$2"
-    local custom_function="$3"
+# Variables to store user choices
+awesome_choice=""
+bspwm_choice=""
+dk_choice=""
+dwm_choice=""
+fluxbox_choice=""
+i3_choice=""
+icewm_choice=""
+openbox_choice=""
+qtile_choice=""
 
-    prompt_installation_choice "$wm_name"
-    case "$choice" in
-        1)
-            $vanilla_function
-            ;;
-        2)
-            $custom_function
-            ;;
-        *)
-            echo "Skipping $wm_name installation..."
-            ;;
-    esac
-}
+# Prompt for AwesomeWM installation
+prompt_installation_choice "AwesomeWM"
+case "$choice" in
+    1)
+        awesome_choice="vanilla"
+        ;;
+    2)
+        awesome_choice="custom"
+        ;;
+    *)
+        echo "Skipping AwesomeWM installation..."
+        ;;
+esac
 
-# Perform installations
-install_window_manager "AwesomeWM" install_vanilla_awesome install_custom_awesome
-install_window_manager "BSPWM" install_vanilla_bspwm install_custom_bspwm
-install_window_manager "DK Window Manager" install_vanilla_dk install_custom_dk
-install_window_manager "DWM" install_vanilla_dwm install_custom_dwm
-install_window_manager "Fluxbox" install_vanilla_fluxbox install_custom_fluxbox
-install_window_manager "i3" install_vanilla_i3 install_custom_i3
-install_window_manager "IceWM" install_vanilla_icewm install_custom_icewm
-install_window_manager "Openbox" install_vanilla_openbox install_custom_openbox
-install_window_manager "Qtile" install_vanilla_qtile install_custom_qtile
+# Prompt for BSPWM installation
+prompt_installation_choice "BSPWM"
+case "$choice" in
+    1)
+        bspwm_choice="vanilla"
+        ;;
+    2)
+        bspwm_choice="custom"
+        ;;
+    *)
+        echo "Skipping BSPWM installation..."
+        ;;
+esac
+
+# Prompt for DK Window Manager (dwm) installation
+prompt_installation_choice "DK Window Manager"
+case "$choice" in
+    1)
+        dk_choice="vanilla"
+        ;;
+    2)
+        dk_choice="custom"
+        ;;
+    *)
+        echo "Skipping DK Window Manager installation..."
+        ;;
+esac
+
+# Prompt for DWM installation
+prompt_installation_choice "DWM"
+case "$choice" in
+    1)
+        dwm_choice="vanilla"
+        ;;
+    2)
+        dwm_choice="custom"
+        ;;
+    *)
+        echo "Skipping DWM installation..."
+        ;;
+esac
+
+# Prompt for Fluxbox installation
+prompt_installation_choice "Fluxbox"
+case "$choice" in
+    1)
+        fluxbox_choice="vanilla"
+        ;;
+    2)
+        fluxbox_choice="custom"
+        ;;
+    *)
+        echo "Skipping Fluxbox installation..."
+        ;;
+esac
+
+# Prompt for i3 installation
+prompt_installation_choice "i3"
+case "$choice" in
+    1)
+        i3_choice="vanilla"
+        ;;
+    2)
+        i3_choice="custom"
+        ;;
+    *)
+        echo "Skipping i3 installation..."
+        ;;
+esac
+
+# Prompt for IceWM installation
+prompt_installation_choice "IceWM"
+case "$choice" in
+    1)
+        icewm_choice="vanilla"
+        ;;
+    2)
+        icewm_choice="custom"
+        ;;
+    *)
+        echo "Skipping IceWM installation..."
+        ;;
+esac
+
+# Prompt for Openbox installation
+prompt_installation_choice "Openbox"
+case "$choice" in
+    1)
+        openbox_choice="vanilla"
+        ;;
+    2)
+        openbox_choice="custom"
+        ;;
+    *)
+        echo "Skipping Openbox installation..."
+        ;;
+esac
+
+# Prompt for Qtile installation
+prompt_installation_choice "Qtile"
+case "$choice" in
+    1)
+        qtile_choice="vanilla"
+        ;;
+    2)
+        qtile_choice="custom"
+        ;;
+    *)
+        echo "Skipping Qtile installation..."
+        ;;
+esac
+
+# Perform installations based on collected choices
+echo "Installing selected window managers..."
+
+if [ "$awesome_choice" == "vanilla" ]; then
+    install_vanilla_awesome
+elif [ "$awesome_choice" == "custom" ]; then
+    install_custom_awesome
+fi
+
+if [ "$bspwm_choice" == "vanilla" ]; then
+    install_vanilla_bspwm
+elif [ "$bspwm_choice" == "custom" ]; then
+    install_custom_bspwm
+fi
+
+if [ "$dk_choice" == "vanilla" ]; then
+    install_vanilla_dk
+elif [ "$dk_choice" == "custom" ]; then
+    install_custom_dk
+fi
+
+if [ "$dwm_choice" == "vanilla" ]; then
+    install_vanilla_dwm
+elif [ "$dwm_choice" == "custom" ]; then
+    install_custom_dwm
+fi
+
+if [ "$fluxbox_choice" == "vanilla" ]; then
+    install_vanilla_fluxbox
+elif [ "$fluxbox_choice" == "custom" ]; then
+    install_custom_fluxbox
+fi
+
+if [ "$i3_choice" == "vanilla" ]; then
+    install_vanilla_i3
+elif [ "$i3_choice" == "custom" ]; then
+    install_custom_i3
+fi
+
+if [ "$icewm_choice" == "vanilla" ]; then
+    install_vanilla_icewm
+elif [ "$icewm_choice" == "custom" ]; then
+    install_custom_icewm
+fi
+
+if [ "$openbox_choice" == "vanilla" ]; then
+    install_vanilla_openbox
+elif [ "$openbox_choice" == "custom" ]; then
+    install_custom_openbox
+fi
+
+if [ "$qtile_choice" == "vanilla" ]; then
+    install_vanilla_qtile
+elif [ "$qtile_choice" == "custom" ]; then
+    install_custom_qtile
+fi
 
 echo "All installations completed."
