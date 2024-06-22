@@ -22,7 +22,7 @@ read_common_packages() {
 }
 
 # Read common packages from file
-read_common_packages "common_packages.txt"
+read_common_packages $HOME/bookworm-scripts/install_scripts/common_packages.txt
 
 # Function to install packages if they are not already installed
 install_packages() {
