@@ -43,9 +43,9 @@ cd ~/bookworm-scripts
 chmod +x setup.sh packages.sh
 
 # Run the setup script
-./setup.sh
+bash ~/bookworm-scripts/setup.sh
 
 # Run the extra packages
-./packages.sh
+bash ~/bookworm-scripts/install_scripts/packages.sh
 
 rm -rf ~/bookworm-scripts
