@@ -89,5 +89,8 @@ bash ~/bookworm-scripts/install_scripts/nerdfonts.sh
 # adding gtk theme and icon theme
 bash ~/bookworm-scripts/colorscheme/blue.sh
 
+# add settings.ini to config
+\cp -r ~/bookworm-scripts/jag_dots/.config/gtk-3.0/ ~/.config/
+
 # make sure lightdm is installed
 bash ~/bookworm-scripts/install_scripts/lightdm.sh
