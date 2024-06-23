@@ -5,7 +5,8 @@ packages=(
 	"bspwm"
 	"sxhkd"
 	"polybar"
-	"tilix"
+	"suckless-tools"
+	"rxvt-unicode"
     "firefox-esr"
 )
 
