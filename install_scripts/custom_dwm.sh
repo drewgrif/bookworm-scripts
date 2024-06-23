@@ -102,7 +102,7 @@ mkdir -p ~/.local/share/dwm
 chmod +x ~/.local/share/dwm/autostart.sh
 
 # moving patched dwm and slstatus
-\cp -r ~/bookworm-script/jag_dots/.config/suckless/ ~/.config/
+\cp -r ~/bookworm-scripts/jag_dots/.config/suckless/ ~/.config/
 
 # installing custom dwm
 cd ~/.config/suckless/dwm
