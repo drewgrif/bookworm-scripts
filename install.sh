@@ -43,7 +43,7 @@ cd ~/bookworm-scripts
 # chmod +x setup.sh packages.sh
 
 # Run the setup script
-bash ~/bookworm-scripts/install_scripts/setup2.sh
+bash ~/bookworm-scripts/install_scripts/setup.sh
 
 # Run the extra packages
 bash ~/bookworm-scripts/install_scripts/packages.sh
