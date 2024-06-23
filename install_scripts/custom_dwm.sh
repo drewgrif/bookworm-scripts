@@ -90,38 +90,19 @@ else
     fi
 fi
 
-# move autostart
-
-
-SCRIPT_DIR=~/bookworm-scripts
-REPO_URL=https://github.com/drewgrif/jag_dots.git
-
-# Check if the directory already exists
-if [ -d "$SCRIPT_DIR/jag_dots" ]; then
-    echo "Directory $SCRIPT_DIR/jag_dots already exists."
-else
-    # Clone the repository
-    echo "Cloning jag_dots repository..."
-    git clone $REPO_URL $SCRIPT_DIR/jag_dots
-    if [ $? -eq 0 ]; then
-        echo "Repository cloned successfully."
-    else
-        echo "Error: Failed to clone repository."
-        exit 1
-    fi
-fi
 
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/kitty/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/backgrounds/ ~/.config/
 
+# move autostart
 mkdir -p ~/.local/share/dwm
 \cp -r ~/bookworm-scripts/jag_dots/.local/share/dwm/autostart.sh ~/.local/share/dwm/
 chmod +x ~/.local/share/dwm/autostart.sh
 
 # moving patched dwm and slstatus
-\cp -r ~/Downloads/jag_dots/.config/suckless/ ~/.config/
+\cp -r ~/bookworm-script/jag_dots/.config/suckless/ ~/.config/
 
 # installing custom dwm
 cd ~/.config/suckless/dwm
