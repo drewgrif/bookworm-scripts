@@ -61,6 +61,9 @@ install_packages "${packages[@]}"
 
 xdg-user-dirs-update
 
+# set location of virtual directory
+qtilevenv="$HOME/.local/src/qtile_venv"
+
 # Setting up virtual environment for qtile.
 python3 -m venv $qtilevenv 
 mkdir ~/.local/bin/
