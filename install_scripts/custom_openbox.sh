@@ -79,7 +79,6 @@ fi
 
 # moving custom config
 \cp -r ~/bookworm-scripts/jag_dots/.config/openbox/ ~/.config/
-\cp -r ~/bookworm-scripts/jag_dots/.config/openbox/Simply_Circle_Dark ~/.themes/
 \cp -r ~/bookworm-scripts/jag_dots/.config/tint2/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/
@@ -94,6 +93,7 @@ bash ~/bookworm-scripts/install_scripts/nerdfonts.sh
 
 # adding gtk theme and icon theme
 bash ~/bookworm-scripts/colorscheme/blue.sh
+mv ~/.config/openbox/Simply_Circle_Dark ~/.themes
 
 # make sure lightdm is installed
 bash ~/bookworm-scripts/install_scripts/lightdm.sh

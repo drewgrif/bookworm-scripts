@@ -117,9 +117,50 @@ prompt_installation_choice() {
     echo "Or ENTER to skip"
     read -r choice
     echo "$choice"
+}
 
-    # Call the appropriate installation function based on user choice
-    case "$choice" in
+# Main script starts here
+
+# Array to store user choices
+declare -A choices
+
+# Prompt for each window manager and store choices in the array
+prompt_and_store_choice() {
+    local wm_name="$1"
+    prompt_installation_choice "$wm_name"
+    choices["$wm_name"]=$choice
+}
+
+# Prompt for AwesomeWM installation
+prompt_and_store_choice "AwesomeWM"
+
+# Prompt for BSPWM installation
+prompt_and_store_choice "BSPWM"
+
+# Prompt for DK Window Manager (dwm) installation
+prompt_and_store_choice "DK Window Manager"
+
+# Prompt for DWM installation
+prompt_and_store_choice "DWM"
+
+# Prompt for Fluxbox installation
+prompt_and_store_choice "Fluxbox"
+
+# Prompt for i3 installation
+prompt_and_store_choice "i3"
+
+# Prompt for IceWM installation
+prompt_and_store_choice "IceWM"
+
+# Prompt for Openbox installation
+prompt_and_store_choice "Openbox"
+
+# Prompt for Qtile installation
+prompt_and_store_choice "Qtile"
+
+# Install based on user choices stored in the array
+for wm_name in "${!choices[@]}"; do
+    case "${choices[$wm_name]}" in
         1)
             case "$wm_name" in
                 "AwesomeWM")
@@ -149,7 +190,6 @@ prompt_installation_choice() {
                 "Qtile")
                     install_vanilla_qtile
                     ;;
-                # Add cases for other window managers as needed
                 *)
                     echo "Installation function not defined for $wm_name"
                     ;;
@@ -184,7 +224,6 @@ prompt_installation_choice() {
                 "Qtile")
                     install_custom_qtile
                     ;;
-                # Add cases for other window managers as needed
                 *)
                     echo "Installation function not defined for $wm_name"
                     ;;
@@ -194,52 +233,6 @@ prompt_installation_choice() {
             echo "Skipping $wm_name installation..."
             ;;
     esac
-
-    # Insert blank lines after skipping installation
-    echo -e "\n\n"
-}
-
-# Main script starts here
-
-# Variables to store user choices
-awesome_choice=""
-bspwm_choice=""
-dk_choice=""
-dwm_choice=""
-fluxbox_choice=""
-i3_choice=""
-icewm_choice=""
-openbox_choice=""
-qtile_choice=""
-# Add more variables for other window managers as needed
-
-# Prompt for AwesomeWM installation
-prompt_installation_choice "AwesomeWM"
-
-# Prompt for BSPWM installation
-prompt_installation_choice "BSPWM"
-
-# Prompt for DK Window Manager (dwm) installation
-prompt_installation_choice "DK Window Manager"
-
-# Prompt for DWM installation
-prompt_installation_choice "DWM"
-
-# Prompt for Fluxbox installation
-prompt_installation_choice "Fluxbox"
-
-# Prompt for i3 installation
-prompt_installation_choice "i3"
-
-# Prompt for IceWM installation
-prompt_installation_choice "IceWM"
-
-# Prompt for Openbox installation
-prompt_installation_choice "Openbox"
-
-# Prompt for Qtile installation
-prompt_installation_choice "Qtile"
-
-# Add prompts for other window managers as needed...
+done
 
 echo "All installations completed."
