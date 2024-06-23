@@ -105,7 +105,7 @@ bash ~/bookworm-scripts/install_scripts/picom.sh
 bash ~/bookworm-scripts/install_scripts/nerdfonts.sh
 
 # adding gtk theme and icon theme
-bash ~/bookworm-scripts/colorscheme/blue.sh
+bash ~/bookworm-scripts/colorschemes/blue.sh
 
 # make sure lightdm is installed
 bash ~/bookworm-scripts/install_scripts/lightdm.sh
