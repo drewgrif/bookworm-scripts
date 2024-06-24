@@ -96,6 +96,7 @@ sudo echo "Exec=/home/$u/.local/bin/qtile start" | sudo tee -a /usr/share/xsessi
 # moving custom config
 \cp -r ~/bookworm-scripts/jag_dots/.config/qtile/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
+\cp -r ~/bookworm-scripts/jag_dots/.config/rofi/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/kitty/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/backgrounds/ ~/.config/

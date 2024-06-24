@@ -93,7 +93,7 @@ bash ~/bookworm-scripts/install_scripts/nerdfonts.sh
 
 # adding gtk theme and icon theme
 bash ~/bookworm-scripts/colorschemes/blue.sh
-mv ~/.config/openbox/Simply_Circle_Dark ~/.themes
+mv ~/.config/openbox/Simply_Circles_Dark ~/.themes
 
 # make sure lightdm is installed
 bash ~/bookworm-scripts/install_scripts/lightdm.sh

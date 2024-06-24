@@ -79,6 +79,7 @@ fi
 \cp -r ~/bookworm-scripts/jag_dots/.config/awesome/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/
+\cp -r ~/bookworm-scripts/jag_dots/.config/rofi/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/kitty/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/backgrounds/ ~/.config/
 
