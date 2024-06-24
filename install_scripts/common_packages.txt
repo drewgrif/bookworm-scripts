@@ -41,3 +41,4 @@
     xdotool
     unzip
     libnotify-dev
+    redshift
