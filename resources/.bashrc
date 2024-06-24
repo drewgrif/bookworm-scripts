@@ -33,9 +33,10 @@ alias gsave="git commit -m 'save'"
 alias gs="git status"
 alias gc="git clone"
 alias tr="tree"
+alias ff="fastfetch"
 
 # Dunst
-alias hi="notify-send 'Hi there!' 'Welcome to my dwm desktop! ' -i ''"
+alias hi="notify-send 'Hi there!' 'Welcome to the jaglinux desktop! ' -i ''"
 
 
 # Add Color
@@ -62,4 +63,3 @@ ENDC="\\[\\e[0m\\]"
 if [[ -n "$SSH_CLIENT" ]]; then ssh_message="-ssh_session"; fi
 PS1="${MAGENTA}\t ${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\w \n${CYAN}\$${ENDC} "
 
-neofetch
