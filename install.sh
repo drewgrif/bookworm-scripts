@@ -48,4 +48,10 @@ bash ~/bookworm-scripts/install_scripts/setup.sh
 # Run the extra packages
 bash ~/bookworm-scripts/install_scripts/packages.sh
 
+\cp -r ~/bookworm-scripts/resources/.bashrc ~
+
 rm -rf ~/bookworm-scripts
+
+sudo apt autoremove
+
+printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
