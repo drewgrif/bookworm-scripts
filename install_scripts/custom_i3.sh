@@ -80,6 +80,7 @@ fi
 
 # moving custom config
 \cp -r ~/bookworm-scripts/jag_dots/.config/i3/ ~/.config/
+\cp -r ~/bookworm-scripts/jag_dots/.config/polybar/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/kitty/ ~/.config/
