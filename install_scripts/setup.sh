@@ -24,15 +24,15 @@ install_custom_bspwm() {
     bash ~/bookworm-scripts/install_scripts/custom_bspwm.sh
 }
 
-# Function to install vanilla DK Window Manager (dwm)
+# Function to install vanilla DK Window Manager 
 install_vanilla_dk() {
-    echo "Installing vanilla DK Window Manager (dwm)..."
+    echo "Installing vanilla DK Window Manager..."
     bash ~/bookworm-scripts/install_scripts/vanilla_dk.sh
 }
 
-# Function to install customized DK Window Manager (dwm)
+# Function to install customized DK Window Manager 
 install_custom_dk() {
-    echo "Installing JUSTAGUYLINUX customized DK Window Manager (dwm)..."
+    echo "Installing JUSTAGUYLINUX customized DK Window Manager..."
     bash ~/bookworm-scripts/install_scripts/custom_dk.sh
 }
 
