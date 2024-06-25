@@ -77,6 +77,7 @@ else
 fi
 
 # moving custom config
+\cp -r ~/bookworm-scripts/jag_dots/scripts/ ~
 \cp -r ~/bookworm-scripts/jag_dots/.icewm/ ~
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/

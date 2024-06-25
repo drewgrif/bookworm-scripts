@@ -79,6 +79,7 @@ else
 fi
 
 # moving custom config
+\cp -r ~/bookworm-scripts/jag_dots/scripts/ ~
 \cp -r ~/bookworm-scripts/jag_dots/.config/bspwm/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/polybar/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/

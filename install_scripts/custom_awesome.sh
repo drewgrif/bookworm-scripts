@@ -76,6 +76,7 @@ else
     fi
 fi
 
+\cp -r ~/bookworm-scripts/jag_dots/scripts/ ~
 \cp -r ~/bookworm-scripts/jag_dots/.config/awesome/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/picom/ ~/.config/

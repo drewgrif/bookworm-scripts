@@ -91,6 +91,7 @@ else
     fi
 fi
 
+\cp -r ~/bookworm-scripts/jag_dots/scripts/ ~
 \cp -r ~/bookworm-scripts/jag_dots/.config/dk/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/polybar/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/backgrounds/ ~/.config/

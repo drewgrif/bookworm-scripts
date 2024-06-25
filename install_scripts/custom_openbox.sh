@@ -78,6 +78,7 @@ else
 fi
 
 # moving custom config
+\cp -r ~/bookworm-scripts/jag_dots/scripts/ ~
 \cp -r ~/bookworm-scripts/jag_dots/.config/openbox/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/tint2/ ~/.config/
 \cp -r ~/bookworm-scripts/jag_dots/.config/dunst/ ~/.config/

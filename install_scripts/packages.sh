@@ -48,7 +48,7 @@ for index in $terminal_selection; do
 done
 
 # Text Editors
-text_editors=("geany" "kate" "gedit" "l3afpad" "mousepad" "micro" "neovim")
+text_editors=("kate" "gedit" "l3afpad" "mousepad")
 
 echo "Choose Text Editors to install (space-separated list, e.g., 1 3 5):"
 for i in "${!text_editors[@]}"; do
