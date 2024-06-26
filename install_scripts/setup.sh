@@ -137,7 +137,7 @@ prompt_and_store_choice "AwesomeWM"
 # Prompt for BSPWM installation
 prompt_and_store_choice "BSPWM"
 
-# Prompt for DK Window Manager (dwm) installation
+# Prompt for DK Window Manager installation
 prompt_and_store_choice "DK Window Manager"
 
 # Prompt for DWM installation

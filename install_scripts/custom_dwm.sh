@@ -6,6 +6,8 @@ packages=(
     "sxhkd"
     "firefox-esr"
     "tilix"
+    "kitty"
+    "flameshot"
 )
 
 # Function to read common packages from a file

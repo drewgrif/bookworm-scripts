@@ -7,6 +7,7 @@ packages=(
     "suckless-tools"
     "polybar"
     "tilix"
+    "kitty"
     "firefox-esr"
 )
 
