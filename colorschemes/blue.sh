@@ -15,7 +15,11 @@ if check_directory "$HOME/.local/share/icons/Colloid-dark"; then
 else
     echo "Installing Colloid-icon-theme..."
     cd ~/Downloads || exit
-    git clone https://github.com/vinceliuice/Colloid-icon-theme.git
+    if [ -d "Colloid-icon-theme" ]; then
+        echo "Colloid-icon-theme repository already cloned. Skipping clone step."
+    else
+        git clone https://github.com/vinceliuice/Colloid-icon-theme.git
+    fi
     cd Colloid-icon-theme || exit
     ./install.sh -t default -s default
     rm -rf ~/Downloads/Colloid-icon-theme/
@@ -27,11 +31,12 @@ if check_directory "$HOME/.themes/Colloid-Dark"; then
 else
     echo "Installing Colloid-gtk-theme..."
     cd ~/Downloads || exit
-    git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
+    if [ -d "Colloid-gtk-theme" ]; then
+        echo "Colloid-gtk-theme repository already cloned. Skipping clone step."
+    else
+        git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
+    fi
     cd Colloid-gtk-theme || exit
     yes | ./install.sh -c dark -t default --tweaks black
     rm -rf ~/Downloads/Colloid-gtk-theme
 fi
-
-# Copy GTK 3.0 configuration files
-\cp -r ~/bookworm-scripts/jag_dots/.config/gtk-3.0/ ~/.config/
