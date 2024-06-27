@@ -40,3 +40,6 @@ else
     yes | ./install.sh -c dark -t default --tweaks black
     rm -rf ~/Downloads/Colloid-gtk-theme
 fi
+
+
+bash ~/bookworm-scripts/colorschemes/update_gtk_settings.sh
