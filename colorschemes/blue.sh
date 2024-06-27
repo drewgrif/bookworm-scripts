@@ -10,7 +10,7 @@ check_directory() {
 }
 
 # Check if Colloid-icon-theme is installed
-if check_directory "$HOME/.local/share/icons/Colloid-dark"; then
+if check_directory "$HOME/.local/share/icons/Colloid-Dark"; then
     echo "Colloid-icon-theme is already installed."
 else
     echo "Installing Colloid-icon-theme..."
