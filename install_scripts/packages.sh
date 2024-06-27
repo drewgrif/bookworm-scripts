@@ -34,7 +34,7 @@ for index in $graphics_selection; do
 done
 
 # Terminals
-terminals=("alacritty" "kitty" "terminator" )
+terminals=("alacritty" "gnome-terminal" "kitty" "konsole" "terminator" "xfce4-terminal" )
 
 echo "Choose Terminals to install (space-separated list, e.g., 1 3):"
 for i in "${!terminals[@]}"; do
@@ -48,7 +48,7 @@ for index in $terminal_selection; do
 done
 
 # Text Editors
-text_editors=("kate" "gedit" "l3afpad" "mousepad")
+text_editors=("geany" "kate" "gedit" "l3afpad" "mousepad" "pluma")
 
 echo "Choose Text Editors to install (space-separated list, e.g., 1 3 5):"
 for i in "${!text_editors[@]}"; do
@@ -62,7 +62,7 @@ for index in $text_editor_selection; do
 done
 
 # Multimedia
-multimedia=("mpv" "vlc" "audacity" "kdenlive" "obs-studio" "mkvtoolnix-gui")
+multimedia=("mpv" "vlc" "audacity" "kdenlive" "obs-studio" "rhythmbox" "ncmpcpp" "mkvtoolnix-gui")
 
 echo "Choose Multimedia applications to install (space-separated list, e.g., 1 3 5):"
 for i in "${!multimedia[@]}"; do
@@ -76,7 +76,7 @@ for index in $multimedia_selection; do
 done
 
 # utilities
-utilities=("nitrogen" "neofetch" "numlockx" "galculator" "cpu-x" "udns-utils" "whois" "curl" "tree" "btop" "htop" "bat" "brightnessctl" "redshift") 
+utilities=( "gparted" "gnome-disk-utility" "neofetch" "nitrogen" "numlockx" "galculator" "cpu-x" "udns-utils" "whois" "curl" "tree" "btop" "htop" "bat" "brightnessctl" "redshift" ) 
 
 echo "Choose utilities applications to install (space-separated list, e.g., 1 3 5):"
 for i in "${!utilities[@]}"; do
