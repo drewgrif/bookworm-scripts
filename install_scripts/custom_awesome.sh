@@ -94,5 +94,3 @@ bash ~/bookworm-scripts/colorschemes/blue.sh
 # add settings.ini to config
 \cp -r ~/bookworm-scripts/jag_dots/.config/gtk-3.0/ ~/.config/
 
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh

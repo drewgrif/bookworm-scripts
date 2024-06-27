@@ -96,5 +96,3 @@ bash ~/bookworm-scripts/install_scripts/nerdfonts.sh
 bash ~/bookworm-scripts/colorschemes/blue.sh
 mv ~/.config/openbox/Simply_Circles_Dark ~/.themes
 
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh

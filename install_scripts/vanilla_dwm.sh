@@ -79,6 +79,3 @@ do
 	cd ~/.config/suckless/$tool;make;sudo make clean install;cd ..
 done
 
-
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh

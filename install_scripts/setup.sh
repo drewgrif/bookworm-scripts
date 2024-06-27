@@ -250,3 +250,8 @@ for wm_name in "${!choices[@]}"; do
 done
 
 echo "All installations completed."
+
+echo "Make sure a Display Manager is installed"
+
+# make sure lightdm is installed
+bash ~/bookworm-scripts/install_scripts/lightdm.sh

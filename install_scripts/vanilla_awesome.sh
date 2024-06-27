@@ -57,8 +57,6 @@ mkdir -p ~/.config/awesome
 cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
 cp /usr/share/awesome/themes/default/theme.lua ~/.config/awesome/
 
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh
 
 
 

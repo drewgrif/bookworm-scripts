@@ -72,5 +72,3 @@ cp /usr/local/share/doc/dk/sxhkdrc ~/.config/dk/
 
 rm -rf ~/Downloads/dk
 
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh

@@ -51,6 +51,3 @@ install_packages() {
 # Call function to install packages
 install_packages "${packages[@]}"
 
-
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh

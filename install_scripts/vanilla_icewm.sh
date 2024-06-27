@@ -53,5 +53,3 @@ install_packages "${packages[@]}"
 # Copy the config files to user directory
 cp -r /usr/share/icewm ~/.icewm
 
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh

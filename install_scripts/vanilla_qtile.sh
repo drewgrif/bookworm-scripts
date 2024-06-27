@@ -94,5 +94,3 @@ sudo cp ./temp /usr/share/xsessions/qtile.desktop;rm ./temp
 u=$USER
 sudo echo "Exec=/home/$u/.local/bin/qtile start" | sudo tee -a /usr/share/xsessions/qtile.desktop
 
-# make sure lightdm is installed
-bash ~/bookworm-scripts/install_scripts/lightdm.sh
