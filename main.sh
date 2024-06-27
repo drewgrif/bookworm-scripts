@@ -23,18 +23,35 @@ fi
 echo "Git is installed. Continuing with the script..."
 # Add further commands here after ensuring Git is installed
 
-clear
-
 
 # Clone the repository into the home directory
-git clone https://github.com/drewgrif/bookworm-scripts ~/bookworm-scripts
+# git clone https://github.com/drewgrif/bookworm-scripts ~/bookworm-scripts
+git clone https://github.com/drewgrif/jag_dots ~/bookworm-scripts/jag_dots
 
-# Navigate into the cloned directory
-cd ~/bookworm-scripts
+
+clear
+echo "
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+ 
+ |j|u|s|t|a|g|u|y|l|i|n|u|x| 
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+ 
+ |c|u|s|t|o|m| |s|c|r|i|p|t| 
+ +-+-+-+-+-+-+ +-+-+-+-+-+-+                                                                                                            
+"
+
 
 # Make setup.sh executable (if needed, though it's typically already executable)
 # chmod +x setup.sh packages.sh
 
 # Run the setup script
-bash ~/bookworm-scripts/main.sh
+bash ~/bookworm-scripts/install_scripts/setup.sh
 
+# Run the extra packages
+bash ~/bookworm-scripts/install_scripts/packages.sh
+
+\cp -r ~/bookworm-scripts/resources/.bashrc ~
+
+rm -rf ~/bookworm-scripts
+
+sudo apt autoremove
+
+printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
