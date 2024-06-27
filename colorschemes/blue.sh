@@ -35,4 +35,3 @@ fi
 
 # Copy GTK 3.0 configuration files
 \cp -r ~/bookworm-scripts/jag_dots/.config/gtk-3.0/ ~/.config/
-
