@@ -7,7 +7,7 @@ mkdir -p ~/.config/gtk-3.0
 cat << EOF > ~/.config/gtk-3.0/settings.ini
 [Settings]
 gtk-theme-name=Colloid-Dark
-gtk-icon-theme-name=Colloid-dark
+gtk-icon-theme-name=Colloid-Dark
 gtk-font-name=Sans 10
 gtk-cursor-theme-name=Adwaita
 gtk-cursor-theme-size=0
@@ -25,7 +25,7 @@ EOF
 # Write to ~/.gtkrc-2.0
 cat << EOF > ~/.gtkrc-2.0
 gtk-theme-name="Colloid-Dark"
-gtk-icon-theme-name="Colloid-dark"
+gtk-icon-theme-name="Colloid-Dark"
 gtk-font-name="Sans 10"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
