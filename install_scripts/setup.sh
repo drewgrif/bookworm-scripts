@@ -116,7 +116,21 @@ prompt_installation_choice() {
     echo "2. Install $wm_name with JUSTAGUYLINUX customized"
     echo "Or ENTER to skip"
     read -r choice
-    echo "$choice"
+
+   case "$choice" in
+        1)
+            echo "Installing $wm_name with no customization..."
+            ;;
+        2)
+            echo "Installing $wm_name with JUSTAGUYLINUX customized..."
+            ;;
+        *)
+            echo "Skipping installation of $wm_name."
+            ;;
+    esac
+    
+    # Adding a couple of line returns
+    echo -e "\n\n"
 }
 
 # Main script starts here
