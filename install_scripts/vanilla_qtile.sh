@@ -12,6 +12,7 @@ packages=(
     "python3-xcffib"
     "libxkbcommon-dev"
     "libxkbcommon-x11-dev"
+    "alsa-utils"
     "tilix"
     "firefox-esr"
 )
