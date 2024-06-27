@@ -1,40 +1,37 @@
 #!/bin/bash
 
-# Function to check if a service is running
-service_running() {
-    sudo systemctl is-active "$1" >/dev/null 2>&1
+# Function to check if a service is active and enabled
+service_active_and_enabled() {
+    local service="$1"
+    # Check if service is active and enabled
+    sudo systemctl is-active --quiet "$service" && sudo systemctl is-enabled --quiet "$service"
 }
 
-# Check if GDM is installed and running
+# Check if GDM is installed and enabled
 check_gdm() {
-    service_running gdm
+    service_active_and_enabled gdm
 }
 
-# Check if SDDM is installed and running
+# Check if SDDM is installed and enabled
 check_sddm() {
-    service_running sddm
+    service_active_and_enabled sddm
 }
 
-# Check if LightDM is installed and running
+# Check if LightDM is installed and enabled
 check_lightdm() {
-    service_running lightdm
+    service_active_and_enabled lightdm
 }
 
-# Check if LXDM is installed and running
+# Check if LXDM is installed and enabled
 check_lxdm() {
-    service_running lxdm
-}
-
-# Check if LY is installed and running
-check_ly() {
-    service_running ly
+    service_active_and_enabled lxdm
 }
 
 # Function to install and enable LightDM
 install_lightdm() {
     echo "Installing LightDM (recommended)..."
     sudo apt update
-    sudo apt install -y lightdm lightdm-gtk-greeter-settings
+    sudo apt install -y lightdm
     sudo systemctl enable lightdm
     echo "LightDM has been installed and enabled."
 }
@@ -66,21 +63,18 @@ install_lxdm() {
     echo "LXDM has been installed and enabled."
 }
 
-# Check which display managers are installed and running
+# Check which display managers are installed and enabled
 if check_lightdm; then
-    echo "LightDM is already installed and running (recommended)."
+    echo "LightDM is already installed and enabled (recommended)."
     exit 0
 elif check_gdm; then
-    echo "GDM3 is already installed and running."
+    echo "GDM3 is already installed and enabled."
     exit 0
 elif check_sddm; then
-    echo "SDDM is already installed and running."
+    echo "SDDM is already installed and enabled."
     exit 0
 elif check_lxdm; then
-    echo "LXDM is already installed and running."
-    exit 0
-elif check_ly; then
-    echo "Ly is already installed and running."
+    echo "LXDM is already installed and enabled."
     exit 0
 fi
 
