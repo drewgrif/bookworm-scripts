@@ -26,6 +26,7 @@ packages=(
     "tilix"
     "kitty"
     "flameshot"
+    "ranger"
 )
 
 # Function to read common packages from a file
