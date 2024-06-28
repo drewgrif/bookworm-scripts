@@ -58,4 +58,3 @@ sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
 
-rm install.sh
