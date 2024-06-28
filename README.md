@@ -1,6 +1,6 @@
 # bookworm-scripts (updated June 28, 2024)
 
-### install.sh
+## X11 Window Managers
 Assuming you have already installed a minimal Debian 12 install.
 The series of shell scripts are intended to facilitate installing popular window managers.
 
@@ -42,7 +42,8 @@ If you installed a custom script above (ex. dwm), a new directory will be locate
 * thunderbird_remove.sh - removes the above thunderbird_install.sh application.
 
 
-### sway-install.sh (new script coming soon)
+## Wayland compositor
+#### sway-install.sh (new script coming soon)
 
 ```
 git clone https://github.com/drewgrif/bookworm-scripts
