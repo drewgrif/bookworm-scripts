@@ -40,7 +40,7 @@ install_lightdm() {
 install_gdm() {
     echo "Installing minimal GDM3..."
     sudo apt update
-    sudo apt install --no-install-recommends gdm3
+    sudo apt install -y --no-install-recommends gdm3
     sudo systemctl enable gdm3
     echo "GDM3 has been installed and enabled."
 }
@@ -49,7 +49,7 @@ install_gdm() {
 install_sddm() {
     echo "Installing minimal SDDM..."
     sudo apt update
-    sudo apt install --no-install-recommends sddm
+    sudo apt install -y --no-install-recommends sddm
     sudo systemctl enable sddm
     echo "SDDM has been installed and enabled."
 }
@@ -58,7 +58,7 @@ install_sddm() {
 install_lxdm() {
     echo "Installing LXDM..."
     sudo apt update
-    sudo apt install --no-install-recommends lxdm
+    sudo apt install -y --no-install-recommends lxdm
     sudo systemctl enable lxdm
     echo "LXDM has been installed and enabled."
 }

@@ -1,17 +1,28 @@
 # bookworm-scripts
 
-### installer.sh
+### install.sh
 Assuming you have already installed a minimal Debian 12 install.
 The series of shell scripts are intended to facilitate installing popular window managers.
 
-Within the installer.sh file, you can choose to install the following window managers:
+Within the install.sh file, you can choose to install the following window managers:
+
+* awesome
 * bspwm
 * dk 
 * dwm
-* qtile
+* fluxbox
 * i3
+* icewm
+* openbox
+* qtile
 
-**Uncomment the lines in the bash script to enable installation.**
+``` 
+wget https://github.com/drewgrif/bookworm-scripts/raw/main/install.sh
+
+chmod +x install.sh
+
+./install.sh
+```
 
 #### With regard to other scripts:
 * custom.sh - installs my current configurations for all window managers.
