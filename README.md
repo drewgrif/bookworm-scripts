@@ -29,6 +29,7 @@ rm install.sh
 
 ```
 ### NOTE
+**Every window manager (except icewm) should have a HELP keybind of Super + h**
 If you installed a custom script above (ex. dwm), a new directory will be located at ~/scripts
 
 
