@@ -28,10 +28,8 @@ chmod +x install.sh
 rm install.sh
 
 ```
-## NOTE
-### Every window manager (except icewm) should have a HELP keybinding:  Super + h
+## HELP keybinding:  Super + h
 If you installed a custom script above (ex. dwm), a new directory will be located at ~/scripts
-
 
 #### With regard to other scripts:
 * changevolume.sh - used by all custom window managers
