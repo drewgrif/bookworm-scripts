@@ -52,10 +52,14 @@ clear
 # Run the extra packages
 bash ~/bookworm-scripts/install_scripts/packages.sh
 
+clear
+
 echo "Make sure a Display Manager is installed"
 
 # make sure lightdm is installed
 bash ~/bookworm-scripts/install_scripts/lightdm.sh
+
+clear
 
 # add bashrc question
 bash ~/bookworm-scripts/install_scripts/add_bashrc.sh
