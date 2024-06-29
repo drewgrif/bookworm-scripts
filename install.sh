@@ -59,10 +59,6 @@ echo "Make sure a Display Manager is installed"
 # make sure lightdm is installed
 bash ~/bookworm-scripts/install_scripts/lightdm.sh
 
-\cp -r ~/bookworm-scripts/resources/.bashrc ~
-
-rm -rf ~/bookworm-scripts
-
 sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
