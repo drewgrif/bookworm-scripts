@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Check if Debian testing or Debian sid is installed
+if grep -qE "(testing|trixie|sid)" /etc/apt/sources.list; then
+    echo "Debian testing or Debian sid is installed. Exiting."
+    exit 1
+fi
+
+# Check if Debian stable is installed
+if grep -q "stable" /etc/apt/sources.list; then
+    echo "Debian stable is installed. Proceeding."
+    
 # Check if git is installed
 if ! command -v git &> /dev/null; then
     echo "Git is not installed. Attempting to install Git..."
@@ -67,3 +77,8 @@ sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
 
+
+else
+    echo "Cannot determine Debian version."
+    exit 1
+fi
