@@ -13,6 +13,7 @@ packages=(
     "polybar"
     "stterm"
     "firefox-esr"
+    "build-essential"
 )
 
 # Function to read common packages from a file
