@@ -6,7 +6,7 @@ install_packages() {
 }
 
 # File Managers
-file_managers=("pcmanfm" "krusader" "nautilus" "nemo" "dolphin" "ranger" "nnn" "lf")
+file_managers=("thunar" "pcmanfm" "krusader" "nautilus" "nemo" "dolphin" "ranger" "nnn" "lf")
 
 echo "Choose File Managers to install (space-separated list, e.g., 1 3 5):"
 for i in "${!file_managers[@]}"; do
