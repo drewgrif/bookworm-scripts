@@ -29,7 +29,6 @@
     pulsemixer
     feh
     fonts-recommended 
-    fonts-ubuntu 
     fonts-font-awesome
     fonts-terminus 
     papirus-icon-theme
