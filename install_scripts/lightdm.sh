@@ -27,6 +27,11 @@ check_lxdm() {
     service_active_and_enabled lxdm
 }
 
+# Check if LXDM is installed and enabled
+check_ly() {
+    service_active_and_enabled ly
+}
+
 # Function to install and enable LightDM
 install_lightdm() {
     echo "Installing LightDM (recommended)..."
