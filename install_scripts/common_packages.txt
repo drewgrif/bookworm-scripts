@@ -49,4 +49,5 @@
     geany-plugin-treebrowser
     geany-plugin-markdown
     geany-plugin-insertnum
+    geany-plugin-lineoperations
     redshift
