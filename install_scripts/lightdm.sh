@@ -27,9 +27,14 @@ check_lxdm() {
     service_active_and_enabled lxdm
 }
 
-# Check if LXDM is installed and enabled
+# Check if Ly is installed and enabled
 check_ly() {
     service_active_and_enabled ly
+}
+
+# Check if SLiM is installed and enabled
+check_slim() {
+    service_active_and_enabled slim
 }
 
 # Function to install and enable LightDM
@@ -68,6 +73,15 @@ install_lxdm() {
     echo "LXDM has been installed and enabled."
 }
 
+# Function to install and enable LXDM
+install_slim() {
+    echo "Installing SLiM..."
+    sudo apt update
+    sudo apt install -y slim
+    sudo systemctl enable slim
+    echo "SLiM has been installed and enabled."
+}
+
 # Check which display managers are installed and enabled
 if check_lightdm; then
     echo "LightDM is already installed and enabled (recommended)."
@@ -81,6 +95,9 @@ elif check_sddm; then
 elif check_lxdm; then
     echo "LXDM is already installed and enabled."
     exit 0
+elif check_slim; then
+    echo "SLiM is already installed and enabled."
+    exit 0
 fi
 
 # If none of the above are installed, offer a choice to the user
@@ -92,8 +109,9 @@ echo "1. Install LightDM (recommended)"
 echo "2. Install minimal GDM3"
 echo "3. Install minimal SDDM"
 echo "4. Install LXDM"
+echo "5. Install SLiM"
 
-read -p "Enter your choice (0/1/2/3/4): " choice
+read -p "Enter your choice (0/1/2/3/4/5): " choice
 
 case $choice in
     0)
@@ -111,6 +129,9 @@ case $choice in
         ;;
     4)
         install_lxdm
+        ;;
+    5)
+        install_slim
         ;;
     *)
         echo "Invalid choice. Exiting."
