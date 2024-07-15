@@ -29,8 +29,6 @@ echo "Git is installed. Continuing with the script..."
 git clone https://github.com/drewgrif/bookworm-scripts ~/bookworm-scripts
 git clone https://github.com/drewgrif/jag_dots ~/bookworm-scripts/jag_dots
 
-# Navigate into the cloned directory
-cd ~/bookworm-scripts
 
 clear
 echo "
