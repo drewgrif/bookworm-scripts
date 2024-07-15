@@ -95,6 +95,9 @@ elif check_sddm; then
 elif check_lxdm; then
     echo "LXDM is already installed and enabled."
     exit 0
+elif check_ly; then
+    echo "Ly is already installed and enabled."
+    exit 0
 elif check_slim; then
     echo "SLiM is already installed and enabled."
     exit 0
