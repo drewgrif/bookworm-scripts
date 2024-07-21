@@ -4,8 +4,17 @@ echo "Would you like to overwrite your current .bashrc with the justaguylinux .b
 read response
 
 if [[ "$response" =~ ^[Yy]$ ]]; then
-    \cp ~/bookworm-scripts/jag_dots/.bashrc ~/.bashrc
-    echo "justaguylinux .bashrc has been copied to ~/.bashrc"
+    if [[ -f ~/.bashrc ]]; then
+        mv ~/.bashrc ~/.bashrc.bak
+        echo "Your current .bashrc has been moved to .bashrc.bak"
+    fi
+    wget -O ~/.bashrc https://raw.githubusercontent.com/drewgrif/jag_dots/main/.bashrc
+    bash
+    if [[ $? -eq 0 ]]; then
+        echo "justaguylinux .bashrc has been copied to ~/.bashrc"
+    else
+        echo "Failed to download justaguylinux .bashrc"
+    fi
 elif [[ "$response" =~ ^[Nn]$ ]]; then
     echo "No changes have been made to ~/.bashrc"
 else
