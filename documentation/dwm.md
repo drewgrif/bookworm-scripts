@@ -38,8 +38,8 @@ Further, if you want a customized dwm with these patches:
 * dwm-vanitygaps
 * dwm-windowfollow
 
-**The autostart file is located at ~/.local/share/dwm/autostart.sh**
-This config is also using both the dwm config and sxhkd for keybindings.
+#### The autostart file is located at ~/.local/share/dwm/autostart.sh**
+#### This config is also using both the dwm config and sxhkd for keybindings.
 
 
 My config looks like this
