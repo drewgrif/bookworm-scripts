@@ -1,28 +1,23 @@
-# suckless tools
+# dwm 
 
-This is a script (intended for Debian Bookworm) that will install the latest tools from https://git.suckless.org
+This document explains the https://github.com/drewgrif/bookworm-scripts install script which gives the user a choice between a vanilla dwm installation and a fully customized installation.
+
+NOTE:  Intended for Debian Bookworm use but may work with debian-based distros.  *No guarantees*
+
+## Vanilla Install
 
 * dwm
 * st
 * slstatus
+* slock
 * dmenu
 
-``` 
-git clone https://github.com/drewgrif/suckless
-
-```
-
-Go to the cloned directory suckless directory.
-
-```
-./install.sh
-
-```
-
+These are installed via git://git.suckless.org 
+**No patches are installed**
+**BARE BONES - no software**
 Choose whether you want:
 
-1. The aforementioned suckless tools without modification.
-2. The nicely configured aforementioned suckless tools that I use everyday.
+## Custom Install
 
 NOTE: The configured dwm has a list of keybinds at Super + h.
 
@@ -32,6 +27,8 @@ Further, if you want a customized dwm with these patches:
 * dwm-attachbottom
 * dwm-autostart
 * dwm-fixborders
+* dwm-focusadjacenttag
+* dwm-focusedontop
 * dwm-focusonnetactive
 * dwm-movestack
 * dwm-pertag
@@ -40,6 +37,9 @@ Further, if you want a customized dwm with these patches:
 * dwm-status2d-systray
 * dwm-vanitygaps
 * dwm-windowfollow
+
+**The autostart file is located at ~/.local/share/dwm/autostart.sh**
+This config is also using both the dwm config and sxhkd for keybindings.
 
 
 My config looks like this
