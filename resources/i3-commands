@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-sudo apt install -y i3 i3lock dunst suckless-tools sxhkd polybar
-
-
