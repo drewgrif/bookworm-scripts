@@ -9,7 +9,7 @@ Within the install.sh file, you can choose to install the following window manag
 * awesome 
 * bspwm
 * dk 
-* dwm
+* [dwm](../../documentation/dwm.md)
 * fluxbox
 * i3
 * icewm
@@ -41,4 +41,3 @@ If you installed a custom script above (ex. dwm), a new directory will be locate
 * redshift-on/off - used as a keybinding for turning redshift on or off.
 * thunderbird_install.sh - installs the newest thunderbird on Debian.
 * thunderbird_remove.sh - removes the above thunderbird_install.sh application.
-
