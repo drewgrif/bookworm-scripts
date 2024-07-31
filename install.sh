@@ -71,5 +71,6 @@ clear
 bash ~/bookworm-scripts/install_scripts/bluetooth.sh
 sudo apt autoremove
 
-printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
+clear
 
+printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"

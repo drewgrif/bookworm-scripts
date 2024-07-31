@@ -82,6 +82,15 @@ $qtilevenv/bin/pip install psutil
 
 ln -sf $qtilevenv/bin/qtile ~/.local/bin/
 
+# Ensure /usr/share/xsessions directory exists
+if [ ! -d /usr/share/xsessions ]; then
+    sudo mkdir -p /usr/share/xsessions
+    if [ $? -ne 0 ]; then
+        echo "Failed to create /usr/share/xsessions directory. Exiting."
+        exit 1
+    fi
+fi
+
 # Adding qtile.desktop to Lightdm xsessions directory
 cat > ./temp << "EOF"
 [Desktop Entry]
@@ -93,4 +102,3 @@ EOF
 sudo cp ./temp /usr/share/xsessions/qtile.desktop;rm ./temp
 u=$USER
 sudo echo "Exec=/home/$u/.local/bin/qtile start" | sudo tee -a /usr/share/xsessions/qtile.desktop
-

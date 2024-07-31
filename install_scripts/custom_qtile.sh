@@ -82,6 +82,16 @@ $qtilevenv/bin/pip install psutil
 
 ln -sf $qtilevenv/bin/qtile ~/.local/bin/
 
+# Ensure /usr/share/xsessions directory exists
+if [ ! -d /usr/share/xsessions ]; then
+    sudo mkdir -p /usr/share/xsessions
+    if [ $? -ne 0 ]; then
+        echo "Failed to create /usr/share/xsessions directory. Exiting."
+        exit 1
+    fi
+fi
+
+
 # Adding qtile.desktop to Lightdm xsessions directory
 cat > ./temp << "EOF"
 [Desktop Entry]
@@ -111,4 +121,3 @@ bash ~/bookworm-scripts/install_scripts/nerdfonts.sh
 
 # adding gtk theme and icon theme
 bash ~/bookworm-scripts/colorschemes/blue.sh
-
