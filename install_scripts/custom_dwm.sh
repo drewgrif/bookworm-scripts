@@ -80,6 +80,15 @@ sudo systemctl enable acpid
 xdg-user-dirs-update
 mkdir -p ~/Screenshots/
 
+# Ensure /usr/share/xsessions directory exists
+if [ ! -d /usr/share/xsessions ]; then
+    sudo mkdir -p /usr/share/xsessions
+    if [ $? -ne 0 ]; then
+        echo "Failed to create /usr/share/xsessions directory. Exiting."
+        exit 1
+    fi
+fi
+
 # Write dwm.desktop file
 cat > ./temp << "EOF"
 [Desktop Entry]
