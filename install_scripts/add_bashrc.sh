@@ -9,7 +9,7 @@ if [[ "$response" =~ ^[Yy]$ ]]; then
         echo "Your current .bashrc has been moved to .bashrc.bak"
     fi
     wget -O ~/.bashrc https://raw.githubusercontent.com/drewgrif/jag_dots/main/.bashrc
-    bash
+    source ~/.bashrc
     if [[ $? -eq 0 ]]; then
         echo "justaguylinux .bashrc has been copied to ~/.bashrc"
     else
