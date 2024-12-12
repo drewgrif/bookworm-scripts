@@ -73,7 +73,7 @@ install_lxdm() {
     echo "LXDM has been installed and enabled."
 }
 
-# Function to install and enable LXDM
+# Function to install and enable SLiM
 install_slim() {
     echo "Installing SLiM..."
     sudo apt update
