@@ -33,7 +33,7 @@
     fonts-terminus 
     papirus-icon-theme
     exa
-    scrot
+    maim
     rofi
     dunst
     libnotify-bin
