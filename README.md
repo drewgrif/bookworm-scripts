@@ -1,3 +1,21 @@
+# ⚠️ THIS REPOSITORY IS NO LONGER MAINTAINED
+
+## Status: Archived/Unmaintained
+
+This repository is no longer actively maintained and will not be migrated to [Codeberg](https://codeberg.org/justaguylinux).
+
+### What This Means:
+- ❌ **No new features** will be added
+- ❌ **No bug fixes** will be provided  
+- ❌ **No security updates** will be applied
+- ❌ **Issues and PRs** will not be reviewed
+- ⚠️ **Use at your own risk**
+
+### For Active Projects:
+Visit my active development at [https://codeberg.org/justaguylinux](https://codeberg.org/justaguylinux)
+
+---
+
 # bookworm-scripts (updated June 28, 2024)
 
 ## X11 Window Managers
